@@ -1,0 +1,14 @@
+.breadcrumb {
+  background-color: white;
+}
+
+.deck-container {
+  border: 1px solid rgba(128, 128, 128, 0.61);
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.flip-btn {
+  margin-right: 0.5rem;
+}
