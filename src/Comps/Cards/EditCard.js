@@ -3,6 +3,8 @@ import CardForm from "./CardForm";
 import { useParams, Link, useHistory } from "react-router-dom";
 import { readCard, readDeck, updateCard } from "../../utils/api";
 
+// allows user to edit a card inside a specific deck using the cardForm component
+
 const EditCard = () => {
   const [deck, setDeck] = useState({ cards: [] });
   const [card, setCard] = useState({});

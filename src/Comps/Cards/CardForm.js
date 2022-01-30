@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
+// form for either editing or creating a card
+
 const CardForm = ({ handleSubmit, card = {} }) => {
   // need card empty object because AddCard isn't passing in a card
   const initNewCard = {
@@ -33,7 +35,6 @@ const CardForm = ({ handleSubmit, card = {} }) => {
 
   return (
     <div>
-      {/* form to create new card */}
       {!card.id && (
         <form onSubmit={onSubmit}>
           <div className="form-group">
@@ -71,7 +72,6 @@ const CardForm = ({ handleSubmit, card = {} }) => {
         </form>
       )}
 
-      {/* form to edit existing card */}
       {card.id && (
         <form onSubmit={onSubmit}>
           <div className="form-group">

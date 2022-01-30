@@ -3,6 +3,8 @@ import { Link, useParams, useHistory } from "react-router-dom";
 import { readDeck } from "../../utils/api/index";
 import "./StudyDeck.css";
 
+// allows the user to flip between the front and back of cards in a deck to study with. After a card is flipped, user can continue to the next card.
+
 const StudyDeck = () => {
   const [deck, setDeck] = useState({ cards: [] });
   const [currentCardNumber, setCurrentCardNumber] = useState(1);
@@ -17,6 +19,8 @@ const StudyDeck = () => {
   const handleNext = () => {
     setCurrentCardNumber((currentCardNumber) => currentCardNumber + 1);
     setIsCardFront(true);
+
+    // after studying the whole deck, user is prompted to either study the deck again or return to the home page.
 
     if (currentCardNumber === deck.cards.length && !isCardFront) {
       const goBackToHomePage = !window.confirm(
@@ -82,7 +86,6 @@ const StudyDeck = () => {
     );
   }
 
-  /* if not enough cards, render this */
   return (
     <div>
       <nav aria-label="breadcrumb">

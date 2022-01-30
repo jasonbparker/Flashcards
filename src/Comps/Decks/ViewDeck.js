@@ -4,6 +4,8 @@ import { readDeck, deleteDeck, deleteCard } from "../../utils/api";
 import BreadCrumbs from "./BreadCrumbs";
 import "./ViewDeck.css";
 
+// returns a list of cards in the specified deck. User can edit, add, or delete cards here.
+
 const ViewDeck = () => {
   const [deck, setDeck] = useState({});
   const { deckId } = useParams();
@@ -39,7 +41,6 @@ const ViewDeck = () => {
       history.go();
     }
   };
-
   return (
     <div>
       <BreadCrumbs

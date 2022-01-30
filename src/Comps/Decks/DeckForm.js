@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+//builds out the form that is used to either edit or create decks.
+
 const DeckForm = ({ handleSubmit, deck, setDeck }) => {
   const initNewDeck = {
     name: "",

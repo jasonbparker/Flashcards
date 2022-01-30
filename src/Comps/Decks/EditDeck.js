@@ -3,6 +3,8 @@ import DeckForm from "./DeckForm";
 import { readDeck, updateDeck } from "../../utils/api";
 import { useParams, useHistory, Link } from "react-router-dom";
 
+// allows user to edit a specified deck using the deckForm component
+
 const EditDeck = () => {
   const [deck, setDeck] = useState({ card: [] });
   const { deckId } = useParams();

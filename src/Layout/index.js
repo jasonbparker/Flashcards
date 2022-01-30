@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import NotFound from "./NotFound";
-import DeckHome from "../Comps/Decks/DeckHome";
+import DeckHome from "../Comps/DeckHome";
 import CreateDeck from "../Comps/Decks/CreateDeck";
 import StudyDeck from "../Comps/Decks/StudyDeck";
 import ViewDeck from "../Comps/Decks/ViewDeck";
@@ -19,6 +19,7 @@ function Layout() {
           <Route exact path="/">
             <DeckHome />
           </Route>
+
           <Route exact path="/decks">
             <Redirect to="/" />
           </Route>

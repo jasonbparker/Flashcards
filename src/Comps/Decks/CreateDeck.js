@@ -4,6 +4,8 @@ import { createDeck } from "../../utils/api";
 import "./CreateDeck.css";
 import DeckForm from "./DeckForm";
 
+// allows user to create a new deck using the deckForm component
+
 const CreateDeck = () => {
   const history = useHistory();
 
