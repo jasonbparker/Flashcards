@@ -37,7 +37,7 @@ const DeckForm = ({ handleSubmit, deck, setDeck }) => {
             <label htmlFor="name">Name</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="name"
               placeholder="Deck Name"
               value={newDeck.name}
@@ -49,7 +49,7 @@ const DeckForm = ({ handleSubmit, deck, setDeck }) => {
             <label htmlFor="description">Description</label>
             <textarea
               type="text"
-              class="form-control"
+              className="form-control"
               id="description"
               placeholder="Brief description of the deck"
               value={newDeck.description}
@@ -74,7 +74,7 @@ const DeckForm = ({ handleSubmit, deck, setDeck }) => {
             <label htmlFor="name">Name</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="name"
               placeholder="Deck Name"
               value={deck.name}
@@ -86,7 +86,7 @@ const DeckForm = ({ handleSubmit, deck, setDeck }) => {
             <label htmlFor="description">Description</label>
             <textarea
               type="text"
-              class="form-control"
+              className="form-control"
               id="description"
               placeholder="Brief description of the deck"
               value={deck.description}

@@ -54,17 +54,17 @@ const ViewDeck = () => {
             <div>
               <Link to={`/decks/${deck.id}/edit`}>
                 <button className="btn btn-secondary">
-                  <i class="bi bi-pencil-fill"></i> Edit
+                  <i className="bi bi-pencil-fill"></i> Edit
                 </button>
               </Link>
               <Link to={`/decks/${deck.id}/study`}>
                 <button className="btn btn-primary">
-                  <i class="bi bi-journal-bookmark"></i> Study
+                  <i className="bi bi-journal-bookmark"></i> Study
                 </button>
               </Link>
               <Link to={`/decks/${deck.id}/cards/new`}>
                 <button className="btn btn-primary add-cards">
-                  <i class="bi bi-plus-lg"></i> Add Cards
+                  <i className="bi bi-plus-lg"></i> Add Cards
                 </button>
               </Link>
             </div>
@@ -73,7 +73,7 @@ const ViewDeck = () => {
                 className="btn btn-danger"
                 onClick={() => handleDelete(deck.id)}
               >
-                <i class="bi bi-trash"></i>
+                <i className="bi bi-trash"></i>
               </button>
             </div>
           </div>
@@ -90,14 +90,14 @@ const ViewDeck = () => {
               <div className="edit-delete">
                 <Link to={`/decks/${deck.id}/cards/${card.id}/edit`}>
                   <button className="btn btn-secondary">
-                    <i class="bi bi-pencil-fill"></i> Edit
+                    <i className="bi bi-pencil-fill"></i> Edit
                   </button>
                 </Link>
                 <button
                   className="btn btn-danger"
                   onClick={() => handleCardDelete(card.id)}
                 >
-                  <i class="bi bi-trash"></i>
+                  <i className="bi bi-trash"></i>
                 </button>
               </div>
             </div>

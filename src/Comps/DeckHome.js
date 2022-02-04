@@ -45,12 +45,12 @@ const DeckHome = () => {
               <div className="view-study">
                 <Link to={`/decks/${deck.id}`}>
                   <button className="btn btn-secondary">
-                    <i class="bi bi-eye"></i> View
+                    <i className="bi bi-eye"></i> View
                   </button>
                 </Link>
                 <Link to={`/decks/${deck.id}/study`}>
                   <button className="btn btn-primary">
-                    <i class="bi bi-journal-bookmark"></i> Study
+                    <i className="bi bi-journal-bookmark"></i> Study
                   </button>
                 </Link>
               </div>
@@ -59,7 +59,7 @@ const DeckHome = () => {
                   className="btn btn-danger"
                   onClick={() => handleDelete(deck.id)}
                 >
-                  <i class="bi bi-trash"></i>
+                  <i className="bi bi-trash"></i>
                 </button>
               </div>
             </div>

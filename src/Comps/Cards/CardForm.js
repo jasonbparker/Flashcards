@@ -41,7 +41,7 @@ const CardForm = ({ handleSubmit, card = {} }) => {
             <label htmlFor="front">Front</label>
             <textarea
               type="text"
-              class="form-control"
+              className="form-control"
               id="front"
               placeholder="Front Side of Card"
               value={newCard.front}
@@ -53,7 +53,7 @@ const CardForm = ({ handleSubmit, card = {} }) => {
             <label htmlFor="back">Back</label>
             <textarea
               type="text"
-              class="form-control"
+              className="form-control"
               id="back"
               placeholder="Back Side of Card"
               value={newCard.back}
@@ -78,7 +78,7 @@ const CardForm = ({ handleSubmit, card = {} }) => {
             <label htmlFor="front">Front</label>
             <textarea
               type="text"
-              class="form-control"
+              className="form-control"
               id="front"
               placeholder="Front Side of Card"
               value={oldCard.front}
@@ -90,7 +90,7 @@ const CardForm = ({ handleSubmit, card = {} }) => {
             <label htmlFor="back">Back</label>
             <textarea
               type="text"
-              class="form-control"
+              className="form-control"
               id="back"
               placeholder="Back Side of Card"
               value={oldCard.back}

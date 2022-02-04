@@ -46,16 +46,16 @@ const StudyDeck = () => {
     return (
       <div>
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item">
               <Link to="/">
-                <i class="bi bi-house-door-fill"></i> Home
+                <i className="bi bi-house-door-fill"></i> Home
               </Link>
             </li>
-            <li class="breadcrumb-item">
+            <li className="breadcrumb-item">
               <Link to={`/decks/${deckId}`}>Rendering In React</Link>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">
+            <li className="breadcrumb-item active" aria-current="page">
               Study
             </li>
           </ol>
@@ -89,16 +89,16 @@ const StudyDeck = () => {
   return (
     <div>
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
             <Link to="/">
-              <i class="bi bi-house-door-fill"></i> Home
+              <i className="bi bi-house-door-fill"></i> Home
             </Link>
           </li>
-          <li class="breadcrumb-item">
+          <li className="breadcrumb-item">
             <Link to={`/decks/${deckId}`}>{deck.name}</Link>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">
+          <li className="breadcrumb-item active" aria-current="page">
             Study
           </li>
         </ol>
@@ -111,7 +111,7 @@ const StudyDeck = () => {
       </p>
       <Link to={`/decks/${deck.id}/cards/new`}>
         <button className="btn btn-primary">
-          <i class="bi bi-plus-lg"></i> Add Cards
+          <i className="bi bi-plus-lg"></i> Add Cards
         </button>
       </Link>
     </div>

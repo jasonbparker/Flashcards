@@ -16,13 +16,13 @@ const CreateDeck = () => {
   return (
     <div>
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
             <Link to="/">
-              <i class="bi bi-house-door-fill"></i> Home
+              <i className="bi bi-house-door-fill"></i> Home
             </Link>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">
+          <li className="breadcrumb-item active" aria-current="page">
             Create Deck
           </li>
         </ol>

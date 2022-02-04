@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import { readDeck, createCard } from "../../utils/api";
 import CardForm from "./CardForm";
 
+// allows user to create a new card inside a specific deck to study with using the cardForm component
+
 const AddCard = () => {
   const [deck, setDeck] = useState({ cards: [] });
   const { deckId } = useParams();
@@ -19,16 +21,16 @@ const AddCard = () => {
   return (
     <div>
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
             <Link to="/">
-              <i class="bi bi-house-door-fill"></i> Home
+              <i className="bi bi-house-door-fill"></i> Home
             </Link>
           </li>
-          <li class="breadcrumb-item">
+          <li className="breadcrumb-item">
             <Link to={`/decks/${deckId}`}>{deck.name}</Link>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">
+          <li className="breadcrumb-item active" aria-current="page">
             Add Card
           </li>
         </ol>
